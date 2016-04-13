@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+    <center>
+        <h1>Datos personales<br></h1>
+    </center>
+    <div>
+  <FORM method="post" action="Comprobacion.php">
+
+<CENTER>
+<TABLE border="0">
+
+<TR>
+   <TD>Nombre:</TD>
+   <TD> <INPUT TYPE="text"  SIZE=18 MAXLENGTH=18 name="nombre"> 
+       F.Nac.:<INPUT TYPE="text"  SIZE=10 MAXLENGTH=10 name="fechana"> 
+       DNI:   <INPUT TYPE="text"  SIZE=12 name="dni"></TD>
+
+<TR>
+   <TD>Apellidos:</TD>
+   <TD> <INPUT TYPE="text"  SIZE=48 MAXLENGTH=48 name="apellidos"></TD>
+
+<TR>
+   <TD>Calle y número:</TD>
+   <TD> <INPUT TYPE="text"  SIZE=48 MAXLENGTH=48 name="direccion"></TD>
+
+<TR>
+  <TD>Código Postal:</TD>
+  <TD> <INPUT TYPE="text"  SIZE=5 MAXLENGTH=5 name="CP">
+      Ciudad:  <INPUT TYPE="text"  SIZE=36 MAXLENGTH=36 name="cuidad"></TD>
+
+<TR>
+   <TD>Provincia: </TD>
+   <TD> <INPUT TYPE="text"  SIZE=20 MAXLENGTH=20 name="provincia">
+       Teléfono: <INPUT TYPE="text"  SIZE=19 MAXLENGTH=19 name="telefono"></TD>
+
+<TR>
+   <TD>Ocupación:</TD>
+   <TD> <SELECT name="ocupacion">
+		<OPTION VALUE="estudiante">Estudiante</OPTION>
+		<OPTION VALUE="empleado">Trabajador por cuenta ajena</OPTION>
+		<OPTION VALUE="autonomo">Autonomo</OPTION>
+		<OPTION VALUE="jubilado">Jubilado</OPTION>
+		<OPTION VALUE="desempleado">Desempleado</OPTION>
+		<OPTION VALUE="otro">Otro</OPTION>
+	</SELECT>Escoja una opción</TD>
+
+<TR>
+   <TD>Comentarios<BR> personales:</TD>
+   <TD> <TEXTAREA rows="5" cols="48" name="comentarios" ></TEXTAREA></TD>
+
+<TR>
+   <TD><B>Pulse aquí:</B></TD>
+   <TD ALIGN=CENTER>
+       <INPUT TYPE="submit" VALUE="Enviar datos ">
+       <INPUT TYPE="reset" VALUE="Borrar los datos"></TD>
+
+</TABLE>
+</CENTER>
+</FORM>
+          
