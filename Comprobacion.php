@@ -109,5 +109,5 @@ function letra_nif($dni) {
         return substr("TRWAGMYFPDXBNJZSQVHLCKE",strtr($dni,"XYZ","012")%23,1);
     }
     $numero = $dni;
-    echo 'El NIF del DNI "'.$numero.'" es "'.$numero.letra_nif($numero).'"<br/>';
+    echo 'El NIF del DNI "'.$numero.'" es "'.letra_nif($numero).'"<br/>';
  
