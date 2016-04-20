@@ -110,3 +110,4 @@ function letra_nif($dni) {
     }
     $numero = $dni;
     echo 'El NIF del DNI "'.$numero.'" es "'.$numero.letra_nif($numero).'"<br/>';
+ 
