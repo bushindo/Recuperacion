@@ -45,7 +45,11 @@ if ($_POST) {
     if ($dni==""){
 	echo "No ha introducido ningun DNI."."<br/>";
     }else {            
-        echo "DNI: ". $dni ."<br/>";
+        if (strlen($dni) != 8){
+            echo "El DNI tiene que tener 8 digitos"."<br/>";
+        }else {
+            echo "DNI: ". $dni ."<br/>";
+        }
     }
 }
 
@@ -61,7 +65,11 @@ if ($_POST) {
     if ($CP==""){
 	echo "No ha introducido ningun codigo postal."."<br/>";
     }else {
-        echo "Codigo Postal: ". $CP ."<br/>";
+        if (strlen($CP) != 5){
+            echo "El codigo postal tiene que tener 5 digitos"."<br/>";
+        }else {
+            echo "Codigo Postal: ". $CP ."<br/>";
+        }
     }
 }
 
@@ -85,7 +93,11 @@ if ($_POST) {
     if ($telefono==""){
 	echo "No ha introducido ningun telefono."."<br/>";
     }else {            
-        echo "Telefono: ". $telefono ."<br/>";
+        if (strlen($telefono) != 9){
+            echo "El telefono tiene que tener 9 digitos"."<br/>";
+        }else {
+            echo "Telefono: ". $telefono ."<br/>";
+        }
     }
 }
 
